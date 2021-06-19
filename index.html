@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Alpine Js</h1>
+
+      <div x-data="{ isOpen: false }">
+        <button @click="isOpen = !isOpen">Show Message</button>
+
+        <ul x-show="isOpen" x-transition>
+          <li>Foo</li>
+          <li>Bar</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+
+  React -> Large Frontend
+  Next -> Full Site
+  Emotion -> Large Frontend Styling
+  Ionic -> Mobile
+  Electron -> Desktop
+  Apollo -> Graphql Server
+  Figma -> Design System, Layout
+  Jwt -> Authantication
+  Alpine -> For Small Dynamic Site
+  Tailwind -> Speed Up Styling
+  Firebase -> For Small Site
+  Github -> Source Controler
+  
+-->
